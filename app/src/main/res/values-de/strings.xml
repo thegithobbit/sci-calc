@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wissenschaftlicher Rechner</string>
+
+    <!-- Rechner -->
+    <string name="action_derivative">d/dx</string>
+    <string name="action_derivative_description">Ableitungsrechner öffnen</string>
+    <string name="action_language">Sprache</string>
+    <string name="language_dialog_title">Sprache wählen</string>
+    <string name="language_system">Systemstandard</string>
+    <string name="cd_backspace">Letztes Zeichen löschen</string>
+    <string name="cd_clear">Löschen</string>
+    <string name="cd_angle_mode">Winkeleinheit: %1$s. Zum Wechseln tippen</string>
+
+    <!-- Ableitung -->
+    <string name="title_derivative">Ableitung</string>
+    <string name="hint_function">Funktion f(x)</string>
+    <string name="hint_point">Stelle x₀ (optional, z. B. 2 oder π/4)</string>
+    <string name="label_examples">Beispiele</string>
+    <string name="label_order">Ordnung der Ableitung</string>
+    <string name="btn_compute">Ableiten</string>
+    <string name="btn_use_result">Ergebnis als f(x) verwenden</string>
+    <string name="result_derivative">f%1$s(x) =</string>
+    <string name="result_value">f%1$s(%2$s) = %3$s</string>
+    <string name="result_numeric">Numerische Kontrolle (finite Differenzen): %1$s</string>
+    <string name="result_value_error">Auswertung bei x₀ = %1$s nicht möglich: %2$s</string>
+    <string name="note_radians">Trigonometrische Funktionen verwenden Bogenmaß.</string>
+    <plurals name="computed_in_ms">
+        <item quantity="one">Berechnet in %d Millisekunde</item>
+        <item quantity="other">Berechnet in %d Millisekunden</item>
+    </plurals>
+
+    <!-- Fehler -->
+    <string name="err_empty">Geben Sie einen Ausdruck ein</string>
+    <string name="err_unexpected_char">Unerwartetes Zeichen „%1$s“ an Position %2$d</string>
+    <string name="err_unexpected_end">Der Ausdruck ist unvollständig</string>
+    <string name="err_mismatched_paren">Klammern stimmen nicht überein</string>
+    <string name="err_unknown_function">Unbekannte Funktion „%1$s“</string>
+    <string name="err_division_by_zero">Division durch null</string>
+    <string name="err_domain">Wert liegt außerhalb des Definitionsbereichs</string>
+    <string name="err_overflow">Das Ergebnis ist zu groß</string>
+    <string name="err_not_differentiable">Die Fakultät von x ist nicht differenzierbar</string>
+    <string name="err_variable_not_allowed">Die Variable x ist nur im Ableitungsmodus verfügbar</string>
+    <string name="err_invalid_point">Ungültige Stelle x₀</string>
+</resources>

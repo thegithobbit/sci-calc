@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Науковий калькулятор</string>
+
+    <!-- Екран калькулятора -->
+    <string name="action_derivative">d/dx</string>
+    <string name="action_derivative_description">Відкрити обчислення похідної</string>
+    <string name="action_language">Мова</string>
+    <string name="language_dialog_title">Оберіть мову</string>
+    <string name="language_system">Як у системі</string>
+    <string name="cd_backspace">Видалити останній символ</string>
+    <string name="cd_clear">Очистити</string>
+    <string name="cd_angle_mode">Одиниці кутів: %1$s. Натисніть, щоб змінити</string>
+
+    <!-- Екран похідної -->
+    <string name="title_derivative">Похідна</string>
+    <string name="hint_function">Функція f(x)</string>
+    <string name="hint_point">Точка x₀ (необовʼязково, напр. 2 або π/4)</string>
+    <string name="label_examples">Приклади</string>
+    <string name="label_order">Порядок похідної</string>
+    <string name="btn_compute">Продиференціювати</string>
+    <string name="btn_use_result">Взяти результат як f(x)</string>
+    <string name="result_derivative">f%1$s(x) =</string>
+    <string name="result_value">f%1$s(%2$s) = %3$s</string>
+    <string name="result_numeric">Чисельна перевірка (скінченні різниці): %1$s</string>
+    <string name="result_value_error">Неможливо обчислити в точці x₀ = %1$s: %2$s</string>
+    <string name="note_radians">Тригонометричні функції — у радіанах.</string>
+    <plurals name="computed_in_ms">
+        <item quantity="one">Обчислено за %d мілісекунду</item>
+        <item quantity="few">Обчислено за %d мілісекунди</item>
+        <item quantity="many">Обчислено за %d мілісекунд</item>
+        <item quantity="other">Обчислено за %d мілісекунди</item>
+    </plurals>
+
+    <!-- Помилки -->
+    <string name="err_empty">Введіть вираз</string>
+    <string name="err_unexpected_char">Неочікуваний символ «%1$s» на позиції %2$d</string>
+    <string name="err_unexpected_end">Вираз не завершено</string>
+    <string name="err_mismatched_paren">Незбалансовані дужки</string>
+    <string name="err_unknown_function">Невідома функція «%1$s»</string>
+    <string name="err_division_by_zero">Ділення на нуль</string>
+    <string name="err_domain">Значення поза областю визначення функції</string>
+    <string name="err_overflow">Результат завеликий</string>
+    <string name="err_not_differentiable">Факторіал від x не можна продиференціювати</string>
+    <string name="err_variable_not_allowed">Змінна x доступна лише на екрані похідної</string>
+    <string name="err_invalid_point">Некоректна точка x₀</string>
+</resources>
