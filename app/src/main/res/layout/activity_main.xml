@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="@string/app_name" />
+
+    <!-- Display -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|end"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/angleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:textAppearance="?attr/textAppearanceLabelLarge"
+            android:textColor="?attr/colorPrimary"
+            tools:text="DEG" />
+
+        <HorizontalScrollView
+            android:id="@+id/expressionScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <TextView
+                android:id="@+id/expression"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:maxLines="1"
+                android:textAppearance="?attr/textAppearanceDisplaySmall"
+                tools:text="2sin(30)+√(16)" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:maxLines="2"
+            android:textAppearance="?attr/textAppearanceHeadlineSmall"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:textIsSelectable="true"
+            tools:text="= 5" />
+    </LinearLayout>
+
+    <!-- Keypad: every key with android:tag inserts that text into the expression -->
+    <GridLayout
+        android:id="@+id/keypad"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:columnCount="5"
+        android:padding="6dp"
+        android:rowCount="7">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAngle"
+            style="@style/CalcKey.Function"
+            android:text="@string/angle_deg" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey"
+            android:text="@string/key_lparen"
+            android:tag="(" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey"
+            android:text="@string/key_rparen"
+            android:tag=")" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Function"
+            android:text="@string/key_fact"
+            android:tag="!" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnClear"
+            style="@style/CalcKey.Accent"
+            android:text="@string/key_clear"
+            android:contentDescription="@string/cd_clear" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Function"
+            android:text="@string/key_sin"
+            android:tag="sin(" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Function"
+            android:text="@string/key_cos"
+            android:tag="cos(" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Function"
+            android:text="@string/key_tan"
+            android:tag="tan(" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Function"
+            android:text="@string/key_ln"
+            android:tag="ln(" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Function"
+            android:text="@string/key_log"
+            android:tag="log(" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Function"
+            android:text="@string/key_asin"
+            android:tag="asin(" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Function"
+            android:text="@string/key_acos"
+            android:tag="acos(" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Function"
+            android:text="@string/key_atan"
+            android:tag="atan(" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Function"
+            android:text="@string/key_sqrt"
+            android:tag="√(" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Function"
+            android:text="@string/key_pow"
+            android:tag="^" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Digit"
+            android:text="7" tools:ignore="HardcodedText"
+            android:tag="7" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Digit"
+            android:text="8" tools:ignore="HardcodedText"
+            android:tag="8" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Digit"
+            android:text="9" tools:ignore="HardcodedText"
+            android:tag="9" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey"
+            android:text="@string/key_div"
+            android:tag="÷" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBackspace"
+            style="@style/CalcKey"
+            android:text="@string/key_backspace"
+            android:contentDescription="@string/cd_backspace" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Digit"
+            android:text="4" tools:ignore="HardcodedText"
+            android:tag="4" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Digit"
+            android:text="5" tools:ignore="HardcodedText"
+            android:tag="5" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Digit"
+            android:text="6" tools:ignore="HardcodedText"
+            android:tag="6" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey"
+            android:text="@string/key_mul"
+            android:tag="×" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Function"
+            android:text="@string/key_pi"
+            android:tag="π" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Digit"
+            android:text="1" tools:ignore="HardcodedText"
+            android:tag="1" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Digit"
+            android:text="2" tools:ignore="HardcodedText"
+            android:tag="2" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Digit"
+            android:text="3" tools:ignore="HardcodedText"
+            android:tag="3" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey"
+            android:text="@string/key_minus"
+            android:tag="−" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Function"
+            android:text="@string/key_e"
+            android:tag="e" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Digit"
+            android:text="0" tools:ignore="HardcodedText"
+            android:tag="0" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Digit"
+            android:text="@string/key_dot"
+            android:tag="." />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey.Function"
+            android:text="@string/key_square"
+            android:tag="^2" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/CalcKey"
+            android:text="@string/key_plus"
+            android:tag="+" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEquals"
+            style="@style/CalcKey.Accent"
+            android:text="@string/key_equals" />
+    </GridLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Simple launcher icon: rounded square with "+" and "−" signs. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <path
+        android:fillColor="@color/launcher_background"
+        android:pathData="M10,2h28a8,8 0,0 1,8 8v28a8,8 0,0 1,-8 8h-28a8,8 0,0 1,-8 -8v-28a8,8 0,0 1,8 -8z" />
+    <path
+        android:fillColor="@color/launcher_foreground"
+        android:pathData="M15,10h4v6h6v4h-6v6h-4v-6h-6v-4h6z" />
+    <path
+        android:fillColor="@color/launcher_foreground"
+        android:pathData="M27,31h12v4h-12z" />
+</vector>

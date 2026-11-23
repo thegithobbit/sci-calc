@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Mathematical notation is the same in every language, so these are not translated. -->
+<resources>
+    <string name="key_sin" translatable="false">sin</string>
+    <string name="key_cos" translatable="false">cos</string>
+    <string name="key_tan" translatable="false">tan</string>
+    <string name="key_ln" translatable="false">ln</string>
+    <string name="key_log" translatable="false">log</string>
+    <string name="key_asin" translatable="false">sin⁻¹</string>
+    <string name="key_acos" translatable="false">cos⁻¹</string>
+    <string name="key_atan" translatable="false">tan⁻¹</string>
+    <string name="key_sqrt" translatable="false">√</string>
+    <string name="key_pow" translatable="false">xʸ</string>
+    <string name="key_square" translatable="false">x²</string>
+    <string name="key_fact" translatable="false">n!</string>
+    <string name="key_pi" translatable="false">π</string>
+    <string name="key_e" translatable="false">e</string>
+    <string name="key_lparen" translatable="false">(</string>
+    <string name="key_rparen" translatable="false">)</string>
+    <string name="key_div" translatable="false">÷</string>
+    <string name="key_mul" translatable="false">×</string>
+    <string name="key_minus" translatable="false">−</string>
+    <string name="key_plus" translatable="false">+</string>
+    <string name="key_equals" translatable="false">=</string>
+    <string name="key_dot" translatable="false">.</string>
+    <string name="key_clear" translatable="false">C</string>
+    <string name="key_backspace" translatable="false">⌫</string>
+    <string name="angle_deg" translatable="false">DEG</string>
+    <string name="angle_rad" translatable="false">RAD</string>
+    <string name="order_1" translatable="false">f′</string>
+    <string name="order_2" translatable="false">f″</string>
+    <string name="order_3" translatable="false">f‴</string>
+
+    <!-- Language names are written in their own language (endonyms) -->
+    <string-array name="language_names" translatable="false">
+        <item>English</item>
+        <item>Українська</item>
+        <item>Deutsch</item>
+    </string-array>
+    <!-- BCP-47 tags matching language_names, same order -->
+    <string-array name="language_tags" translatable="false">
+        <item>en</item>
+        <item>uk</item>
+        <item>de</item>
+    </string-array>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Default (English) strings. Translations live in values-uk/ and values-de/. -->
+<resources>
+    <string name="app_name">Scientific Calculator</string>
+
+    <!-- Calculator screen -->
+    <string name="action_derivative">d/dx</string>
+    <string name="action_derivative_description">Open derivative calculator</string>
+    <string name="action_language">Language</string>
+    <string name="language_dialog_title">Choose language</string>
+    <string name="language_system">System default</string>
+    <string name="cd_backspace">Delete last symbol</string>
+    <string name="cd_clear">Clear</string>
+    <string name="cd_angle_mode">Angle unit: %1$s. Tap to switch</string>
+
+    <!-- Derivative screen -->
+    <string name="title_derivative">Derivative</string>
+    <string name="hint_function">Function f(x)</string>
+    <string name="hint_point">Point x₀ (optional, e.g. 2 or π/4)</string>
+    <string name="label_examples">Examples</string>
+    <string name="label_order">Derivative order</string>
+    <string name="btn_compute">Differentiate</string>
+    <string name="btn_use_result">Use result as f(x)</string>
+    <string name="result_derivative">f%1$s(x) =</string>
+    <string name="result_value">f%1$s(%2$s) = %3$s</string>
+    <string name="result_numeric">Numerical check (finite differences): %1$s</string>
+    <string name="result_value_error">Cannot evaluate at x₀ = %1$s: %2$s</string>
+    <string name="note_radians">Trigonometric functions use radians.</string>
+    <plurals name="computed_in_ms">
+        <item quantity="one">Computed in %d millisecond</item>
+        <item quantity="other">Computed in %d milliseconds</item>
+    </plurals>
+
+    <!-- Errors (mapped from CalcError) -->
+    <string name="err_empty">Enter an expression</string>
+    <string name="err_unexpected_char">Unexpected symbol “%1$s” at position %2$d</string>
+    <string name="err_unexpected_end">The expression is incomplete</string>
+    <string name="err_mismatched_paren">Mismatched parenthesis</string>
+    <string name="err_unknown_function">Unknown function “%1$s”</string>
+    <string name="err_division_by_zero">Division by zero</string>
+    <string name="err_domain">Value is outside the domain of the function</string>
+    <string name="err_overflow">The result is too large</string>
+    <string name="err_not_differentiable">Factorial of x cannot be differentiated</string>
+    <string name="err_variable_not_allowed">Variable x is available only on the derivative screen</string>
+    <string name="err_invalid_point">Invalid point x₀</string>
+</resources>
